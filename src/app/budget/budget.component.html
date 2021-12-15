@@ -1,0 +1,10 @@
+<p>budget works!</p>
+
+<div>
+    <ul>
+        <li *ngFor="let expense of expenses">
+            {{expense.name}} | {{expense.cost}}
+        </li>
+    </ul>
+    <h2> Total: {{getTotalCost()}}</h2>
+</div>

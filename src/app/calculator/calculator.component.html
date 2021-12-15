@@ -1,0 +1,33 @@
+<p>calculator works!</p>
+
+
+<div>
+    Total amount of bill
+    <input [(ngModel)]= 'foodCost' type="number" />
+  
+    <p> Sales Tax: {{foodCost * .02 | currency}}</p>
+  
+    <!-- <p> Sales Tax : {{ salesTax }}</p> -->
+  </div>
+  
+  <div> 
+    Total percentage of tip : 
+  
+    <input [(ngModel)]= 'tipPercentage' type='range' />
+  
+    {{tipPercentage}}
+  </div>
+  
+  <div>
+  <button (click)="calculate()"> calculate </button>
+  </div>
+  
+  <!-- <div>
+    Total Bill :
+  
+    <input />
+  
+  </div>  -->
+  
+  <hr>
+  {{foodTotal | currency }}
