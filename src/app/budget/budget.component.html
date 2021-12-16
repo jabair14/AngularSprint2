@@ -3,7 +3,10 @@
 <div>
     <table>
         <tr *ngFor="let expense of expenses">
-            <td>{{expense.name}}</td><td> &nbsp;&nbsp;&nbsp;&nbsp;{{expense.cost}}</td>
+            <td>{{expense.name}}</td>
+            <td> 
+                <input value='{{expense.cost}}' />
+            </td>
         </tr>
     </table><hr color="black">
     <h2> Total&nbsp; {{getTotalCost() | currency}}</h2>

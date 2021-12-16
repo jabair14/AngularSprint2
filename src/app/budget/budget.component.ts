@@ -12,7 +12,7 @@ export class BudgetComponent implements OnInit {
     {name: "phone", cost: 75},
     {name: "bills", cost: 250},
     {name: "car", cost: 150},
-    {name: "misc", cost: 200}
+    {name: "misc", cost: 0}
   ]
 
    
