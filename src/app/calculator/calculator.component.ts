@@ -20,6 +20,6 @@ export class CalculatorComponent implements OnInit {
   foodTotal: number = 0;
 
   calculate(){
-    this.foodTotal = ( (this.foodCost + (this.foodCost * .02 )) + (this.foodCost * this.tipPercentage/100));
+    this.foodTotal = ( (this.foodCost + (this.foodCost * .06 )) + (this.foodCost * this.tipPercentage/100));
   }
 }
