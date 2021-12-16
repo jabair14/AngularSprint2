@@ -152,6 +152,10 @@ https://templatemo.com/tm-538-digital-trend
     color: rgba(0,0,0,0.5);
   } */
 
+  img {
+    cursor: pointer
+  }
+
 
   /* BUTTON */
   .custom-btn {
