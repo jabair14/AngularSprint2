@@ -5,9 +5,11 @@
         <tr *ngFor="let expense of expenses">
             <td>{{expense.name}}</td>
             <td> 
-                <input value='{{expense.cost}}' />
+                <input (change)="onChangeCost($event)" value={{expense.cost}} name={{expense.name}}/>
             </td>
         </tr>
-    </table><hr color="black">
-    <h2> Total&nbsp; {{getTotalCost() | currency}}</h2>
+    </table>
+    <!-- <button (click)="onChangeCost()">Submit</button> -->
+    <hr color="black">
+    <h2> Total: {{getTotalCost() | currency}}</h2>
 </div>
