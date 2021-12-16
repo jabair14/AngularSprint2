@@ -2,7 +2,7 @@
 
 
 <div>
-    Total amount of bill
+    Total amount of bill $
     <input [(ngModel)]= 'cost' type="number" />
   
     <p> Sales Tax: {{cost * .06 | currency}}</p>
@@ -11,7 +11,7 @@
   </div>
   
   <div> 
-    Total percentage of tip : 
+    % Tip : 
   
     <input [(ngModel)]= 'tipPercentage' type='range' min='0' max="30" />
   
@@ -33,4 +33,4 @@
   Tip Amount: {{tipAmount | currency}}
   <br>  
   
-  Amount Due: {{foodTotal | currency }}
+  Amount Due: {{total | currency }}
