@@ -12,14 +12,15 @@ export class CalculatorComponent implements OnInit {
   ngOnInit(): void {
   }
   title : string = "Tip Calculator";
-
-  foodCost: number = 0;
-
+  cost: number = 0;
   tipPercentage: number = 0;
-
   foodTotal: number = 0;
+  tipAmount: number = 0
+  
 
   calculate(){
-    this.foodTotal = ( (this.foodCost + (this.foodCost * .06 )) + (this.foodCost * this.tipPercentage/100));
+    this.foodTotal = ( (this.cost + (this.cost * .06 )) + (this.cost * this.tipPercentage/100));
+    this.tipAmount = (this.cost * this.tipPercentage/100)
   }
+
 }
