@@ -13,4 +13,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularSprint2';
+  isYellow: boolean = true;
+  isBlack: boolean = false;
+
+  
+  makeBlack(){
+    this.isYellow = false;
+    this.isBlack = true;
+  }
+
+  makeYellow(){
+    this.isYellow = true;
+    this.isBlack = false;
+  }
+
+  nightMode(){
+    if (this.isYellow == true){
+    this.makeBlack()
+    }else {
+      this.makeYellow()
+    }
+  } 
 }

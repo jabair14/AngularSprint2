@@ -1,10 +1,10 @@
-<p>budget works!</p>
+
 
 <div>
-    <ul>
-        <li *ngFor="let expense of expenses">
-            {{expense.name}} | {{expense.cost}}
-        </li>
-    </ul>
-    <h2> Total: {{getTotalCost()}}</h2>
+    <table>
+        <tr *ngFor="let expense of expenses">
+            <td>{{expense.name}}</td><td> &nbsp;&nbsp;&nbsp;&nbsp;{{expense.cost}}</td>
+        </tr>
+    </table><hr color="black">
+    <h2> Total&nbsp; {{getTotalCost() | currency}}</h2>
 </div>
