@@ -1,25 +1,25 @@
-.custom-btn {
-    background-color: #262534;
-    border: 2px solid black;
-    
-    border-radius: 12px;
-    padding: 0px 5px 2px 5px;
-    color: white;
-    font-family: var(--title-font-family);
-    font-size: var(--p-font-size);
-    white-space: nowrap;
-  }
+// .custom-btn {
+//     background-color: transparent;
+//     border: 2px solid black;
+//     margin-top: 5px;
+//     border-radius: 12px;
+//     padding: 0px 5px 2px 5px;
+//     font-family: var(--title-font-family);
+//     font-size: var(--p-font-size);
+//     white-space: nowrap;
+//   }
 
-  .custom-btn.btn-bg {
-    background: var(--white-color);
-    color: var(--primary-color);
-    border-color: transparent;
-	transition: all .3s ease;
-  }
+//   .custom-btn.btn-bg {
+//     background: var(--white-color);
+//     color: var(--primary-color);
+//     border-color: transparent;
+// 	transition: all .3s ease;
+//   }
   
-  .custom-btn:hover,
-  .custom-btn:focus {
-    background: var(--dark-color);
-    color: var(--white-color);
-    border-color: transparent;
-  }
+//   .custom-btn:hover,
+//   .custom-btn:focus {
+//     background: var(--dark-color);
+//     color: var(--white-color);
+//     border-color: transparent;
+//     cursor: pointer;
+//   }
